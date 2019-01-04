@@ -1,0 +1,21 @@
+1a...> db.employee.find({"DeptNo":1})
+1b...> db.employee.find({"ProjectNo":2},{"Name":1})
+
+2a...> db.part.update({"pno":1},{$set:{"pname":"ljfajnf"}})
+2b...> db.part.find({"pno":1},{"sname":1}).pretty()
+
+3a...> db.boat.count({"sname":"jack"})
+3b...> db.boat.find({"colour":"white"},{"bname":1})
+
+4a...> db.part.find({"wname":"Patil and sons"},{"pname":1})
+4b...> db.part.aggregate({$group:{_id:"$wno","TOTAL":{$sum:"$quantity"}}})
+
+5a...> db.book.find({"isbn":123},{"usn":1})
+5b...> db.book.find({"title":"dbms"},{"usn":1})
+
+
+
+
+
+
+
